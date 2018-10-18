@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bound{
+    background: #FFC000;
+    margin: 40px auto;
+    width: 800px;
+    height: 500px;
+}
