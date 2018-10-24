@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+  
+   {% include nav.html %}
+   <div class="wrapper">
+        <h1>{{ page.title }}</h1>
+        <section>
+          {{ content }}
+        </section>
+    </div>
+    <div class="w3-container w3-aqua wrapper">
+  <h2>London</h2>
+  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+</div>
+    
+    <footer class="wrapper">
+      &copy; to me
+    </footer>
+    
+        
+    <script src="assets/js/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/app.js"></script> 
+  </body>
+</html>
