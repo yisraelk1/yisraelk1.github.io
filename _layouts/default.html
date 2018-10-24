@@ -1,19 +1,20 @@
 
+<!doctype html>
+<html lang="en">
   {% include head.html %}
+ <body>
    {% include nav.html %}
+   
    <div class="wrapper">
-        <h1>{{ page.title }}</h1>
-        <section>
-          {{ content }}
-        </section>
-    </div>
-    <div class="w3-container w3-aqua wrapper">
-  <h2>London</h2>
-  <p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
-</div>
-    
-    <footer class="wrapper">
-      &copy; to me
+   {{ content }}
+   </div>
+   
+   
+   
+    <footer class="wrapper footer">
+       &copy; <span><b>to yisrael mailman</b></span>
     </footer>
     
 {% include footer.html %}
+ </body>
+</html>
