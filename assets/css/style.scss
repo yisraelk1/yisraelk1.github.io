@@ -1,9 +1,15 @@
 ---
 ---
 
+
+
+@import '_reset.scss';
 @import '_w3css.scss';
 @import '_post.scss';
 @import '_footer.scss';
+
+
+
 
 html {
   height: 100%;
@@ -11,17 +17,24 @@ html {
 }
 
 body{
+    direction: rtl;
     position: relative;
     //background: #a2e6ff;
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
     min-height: 100%;
     padding-bottom: 50px;
 }
 
+
 .wrapper{
     padding: 0 80px;
 }
-
+.w3-serif{
+    font-family:'Rubik',serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'Rubik',"Segoe UI",Arial,sans-serif;
+}
 .w3-bar{
     
     a{

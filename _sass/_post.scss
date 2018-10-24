@@ -1,11 +1,24 @@
 //post css
 
 
+.post{
+    
+    display: inline-block;
+    .w3-card-4{
+        border-radius: 10px;
+        header{
+            border-radius: 10px 10px 0 0;
+        }
+        footer{
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
 .content{
     margin: 20px auto;
     padding: 10px 20px;
     background: #eee;
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:  0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .meta{
