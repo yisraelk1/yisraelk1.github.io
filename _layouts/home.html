@@ -6,20 +6,14 @@ layout: default
     <h2>פוסטים</h2>
 
   {% for post in site.posts %}
-    <div class="post">
-        <div class="w3-card-4 w3-margin-bottom">
+    <div class="post-box w3-padding w3-padding-24 w3-border-bottom">
+        <div class="w3-card-4  post w3-round">
 
-            <header class="w3-container w3-pale-blue">
-                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            </header>
-
-            <div class="w3-container w3-padding">
+            <div class="w3-container ">
+               <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
                 <p>{{ post.excerpt }}</p>
-            </div>
-
-            <footer class="w3-container w3-blue-grey">
                 <h5 class="meta">{{ post.date | date_to_string }}</h5>
-            </footer>
+            </div>
 
         </div>
     </div>

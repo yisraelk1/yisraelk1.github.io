@@ -1,19 +1,24 @@
 //post css
 
 
+
+
+.post-box{
+    max-width: 50vw;
+}
 .post{
     
     display: inline-block;
-    .w3-card-4{
-        border-radius: 10px;
-        header{
-            border-radius: 10px 10px 0 0;
-        }
-        footer{
-            border-radius: 0 0 10px 10px;
-        }
+    //border-radius: 10px;
+    header{
+        //border-radius: 10px 10px 0 0;
+    }
+    .meta{
+        font-size: 12px;
+        //border-radius: 0 0 10px 10px;
     }
 }
+
 .content{
     margin: 20px auto;
     padding: 10px 20px;
