@@ -1,17 +1,23 @@
 
 <!doctype html>
 <html lang="en">
+ 
   {% include head.html %}
- <body>
   
+ <body>
+<!-- nav -->
    {% include nav.html %}
    
    <div class="wrapper">
+   
    {{ content }}
+   
    </div>
    
-    <footer class="wrapper footer">
-       &copy; <span><b>to yisrael mailman</b></span>
+    <footer class="footer">
+        <div class="wrapper">
+            &copy; <span><b>to yisrael mailman</b></span>
+        </div>
     </footer>
     
 {% include footer.html %}

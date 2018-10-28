@@ -2,19 +2,38 @@
 layout: default
 ---
    
+   <header>
+       <div class="grid-container">
+           
+        <div class="w3-card-4">
+            <img src="{{ site.baseurl }}/assets/imges/webdesign-tips.jpg" width="100%" alt="webdesign">
+        </div>
+        <div class="container-text">
+            <h2 class="">הבלוג של ישראל</h2>
+            <p>שלום זה הבלוג שלי ואני שמח שאתם פה.</p>
+        </div>
+          
+          
+        </div>
+        
 
-    <h2>פוסטים</h2>
+   </header>
 
+
+<!--    <h2>פוסטים</h2>-->
+ <div class="post-container">
   {% for post in site.posts %}
-    <div class="post-box w3-padding w3-padding-24 w3-border-bottom">
-        <div class="w3-card-4  post w3-round">
+    <div class="post-box w3-padding-24 w3-border-bottom">
+        <div class="w3-hover-shadow post w3-round">
 
-            <div class="w3-container ">
-               <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                <p>{{ post.excerpt }}</p>
+            <div class="w3-container">
                 <h5 class="meta">{{ post.date | date_to_string }}</h5>
+                <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt }}</p>
+                <h5 class="readMore"><a href="{{ post.url }}">לקרוא עוד</a></h5>
             </div>
 
         </div>
     </div>
   {% endfor %}
+</div>
