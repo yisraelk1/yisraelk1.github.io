@@ -1,55 +1,88 @@
 //post css
 
 
-.post-container{
-    padding: 50px 0;
+.post-container {
+    margin: 0;
+    padding: 5rem 0;
     //background: rgb(148, 234, 255);
 }
 
-.post-box{
-    margin: auto;
-    max-width: 70vw;
-    
+.post-nam {
+    position: relative;
+    padding: 1rem 0;
+
+    span {
+        padding: 0.8rem 1.4rem;
+        font-size: 2.2rem;
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.4), 0 2px 5px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+        border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+        box-shadow: $shadow-box;
+    }
+
+    .hr {
+        position: absolute;
+        right: 48%;
+        padding: 110px 0;
+        border-right: 2px solid rgba(56, 56, 56, 0.3);
+        box-shadow: $shadow;
+    }
 }
-.post{
-    padding: 20px 10px;
+
+.post-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+    margin: auto;
+    padding: 1rem 2rem;
+    max-width: 65vw;
+    //border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.post {
+    //display: inline-block;
+    margin: 1rem 0;
+    padding: 2rem;
     background: #fff;
     display: inline-block;
     //border-radius: 10px;
     transition: ease-in-out 0.3s;
-    h5{
-        
-    }
-    .meta{
+    border-radius: 20px;
+    box-shadow: $shadow;
+
+    h5 {}
+
+    .meta {
         direction: ltr;
         margin: 0;
         padding: 0px;
         font-size: 10px;
     }
-    .title{
+
+    .title {
         margin: 0;
         padding: 0 0 20px 0;
         font-weight: bold;
     }
-    .readMore{
+
+    .readMore {
         font-weight: bold;
         font-size: 14px;
         text-decoration: underline;
     }
-    
-    header{
-        //border-radius: 10px 10px 0 0;
-    }
-    
+
 }
 
-.content{
+.post:hover {
+    box-shadow: $shadow-box;
+}
+
+.content {
     margin: 20px auto;
     padding: 10px 20px;
     background: #eee;
-    box-shadow:  0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.meta{
+.meta {
     font-family: sans-serif;
 }

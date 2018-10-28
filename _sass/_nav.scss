@@ -1,0 +1,26 @@
+nav {
+    background: #07341f;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+
+    .links {
+        display: grid;
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+        grid-template-columns: repeat(2, auto);
+        align-content: center;
+        text-align: center;
+
+        a {
+            //background: rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 2.3rem;
+            text-shadow: $shadow-text;
+        }
+    }
+}
