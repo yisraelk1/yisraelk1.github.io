@@ -2,12 +2,13 @@
 
 
 .post-container{
+    padding: 50px 0;
     //background: rgb(148, 234, 255);
 }
 
 .post-box{
     margin: auto;
-    max-width: 60vw;
+    max-width: 70vw;
     
 }
 .post{
@@ -20,6 +21,7 @@
         
     }
     .meta{
+        direction: ltr;
         margin: 0;
         padding: 0px;
         font-size: 10px;
