@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ededed;
+}
+
+
+h1 {
+    width: 400px;
+    margin: 20px auto;
+    padding: 5px;
+    background: #fff852;
+    color: #090d52;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.clcoletor {
+    margin: auto;
+    padding: 10px;
+    width: 400px;
+    height: 350px;
+    
+    background: #ffa500;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.gridButtons{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 50px;
+    grid-gap: 10px;
+}
+.text{
+    margin: auto;
+    width: 100%;
+    font-size: 20pt;
+}
+
+.buttons{
+    font-size: 20pt;
+}
